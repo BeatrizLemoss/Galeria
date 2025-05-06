@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Álbum de Países</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script defer src="{% static 'paises/main.js' %}"></script>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color:white;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">🌍 Álbum de Fotos Geográfico</h1>
+
+        <div class="descricao">
+            <p>Este projeto é um <strong>álbum digital interativo</strong> que apresenta fotos de diferentes países ao redor do mundo.</p>
+            <p>A ideia é proporcionar uma <em>experiência visual e educativa</em>, permitindo ao usuário explorar imagens representativas de várias culturas e geografias.</p>
+            <p>Durante o uso em sala de aula, uma <strong>página especial</strong> será exibida com fundo <span class="verde">verde</span> para indicar que está no horário da aula, e <span class="vermelho">vermelho</span> quando estiver fora do horário.</p>
+            <p>Essa funcionalidade visa ajudar no controle de tempo e foco durante as atividades escolares.</p>
+        </div>
+    </div>
+</body>
+</html>

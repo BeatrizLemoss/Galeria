@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Hora da Aula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        </style>
+
+        
+        {% if hora %}
+        <style>
+        body {
+            background-color: green;
+        }
+    </style>
+
+        {% else %}
+        <style>
+        body {
+            background-color: red;
+        }
+        </style>
+        {% endif %}
+</head>
+<body>
+    <div class="container">
+        
+        
+            {% if hora %}
+            <h1> Estamos no horário de aula! 📚  </h1>
+            <img src = "https://ifce.edu.br/maranguape/noticias-maranguape/aluna-do-campus-participa-de-curso-internacional/20230622_1522232.jpg/@@images/39467615-4529-4a59-9877-4aeb667aae15.jpeg">
+            {% else %}
+            <h1> Aviso! </h1>
+            <img src = "https://cdn.awsli.com.br/2500x2500/1727/1727339/produto/203870753/placa-sinalizacao-perigo-somente-pessoal-autorizado-dvnyjg.jpg">
+            {% endif %}
+       
+    </div>
+</body>
+</html>

@@ -4,5 +4,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('sobre/',views.sobre, name = 'sobre')  # Certifique-se de que a URL está corretamente configurada
+    path('sobre/',views.sobre, name = 'sobre'),
+    path('descricao/',views.descricao, name = 'descricao'),
+    path('hora_aula/',views.hora_aula, name = 'hora_aula')
+
 ]
